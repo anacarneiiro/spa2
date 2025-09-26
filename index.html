@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meus Álbuns Favoritos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #eee;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .album-card {
+      background: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .album-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .album-cover {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      height: 180px;
+    }
+
+    .album-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .album-title {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin: 0 0 5px;
+    }
+
+    .album-artist {
+      font-size: 0.9em;
+      color: #bbb;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meus Álbuns Favoritos</h1>
+  <div class="album-grid">
+    <div class="album-card">
+      <img src="./images1/album 1.jpg" alt="Álbum 1" class="album-cover" />
+      <div class="album-info">
+        <p class="album-title">Chris Brown</p>
+        <p class="album-artist">Fan of a Fan</p>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="./images1/album 2.jpg" alt="Álbum 2" class="album-cover" />
+      <div class="album-info">
+        <p class="album-title">MC GP</p>
+        <p class="album-artist">Caçadores de Tesouro</p>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="./images1/album 3.webp" alt="Álbum 3" class="album-cover" />
+      <div class="album-info">
+        <p class="album-title">MC IG</p>
+        <p class="album-artist">Meu nome não é Igor</p>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="./images1/ab67616d0000b27316487ebeeffffcfe02da27ab.jpg" alt="Álbum 4" class="album-cover" />
+      <div class="album-info">
+        <p class="album-title">José Jr</p>
+        <p class="album-artist">das coisas que carrego dentro </p>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="./images1/album 5.jpg" alt="Álbum 5" class="album-cover" />
+      <div class="album-info">
+        <p class="album-title">SZA</p>
+        <p class="album-artist">SOSS</p>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="./images1/album 6.jpg" alt="Álbum 6" class="album-cover" />
+      <div class="album-info">
+        <p class="album-title">Soarito 6</p>
+        <p class="album-artist">Caixa Azul </p>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="./images1/album 7.jpg" alt="Álbum 7" class="album-cover" />
+      <div class="album-info">
+        <p class="album-title">C4 Pedro</p>
+        <p class="album-artist">King Ckwa</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
