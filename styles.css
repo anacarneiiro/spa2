@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  background: #1db954; /* verde Spotify */
+  background: #b91d6b; /* verde Spotify */
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
@@ -81,7 +81,7 @@ main p {
 }
 
 main button {
-  background-color: #1db954;
+  background-color: #b91d6b;
   border: none;
   padding: 15px 40px;
   color: white;
@@ -92,7 +92,7 @@ main button {
 }
 
 main button:hover {
-  background-color: #17a44b;
+  background-color: #1db954;
 }
 
 footer {
