@@ -3,53 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MySpoty - Suas Músicas, Meu Mundo</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Pagina Inicial..</title>
+  <style>
+    body, html {
+      margin: 0; 
+      height: 100%;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      max-width: 600px;
+      max-height: 600px;
+    }
+  </style>
+  <script>
+    // Depois de 4 segundos, redireciona para a página inicial (index.html)
+   setTimeout(() => {
+  window.location.href = 'home.html';
+}, 4000); // Redireciona em 4 segundos
+  </script>
 </head>
 <body>
-  <header>
-    <div class="logo">MySpoty</div>
-    <nav id="nav-menu">
-      <a href="#">Minha Playlist é: </a>
-      <a href="#">Animada</a>
-      <a href="#">Eclética</a>
-      <a href="#">Divertida</a>
-      <a href="#">Animal</a>
-    </nav>
-    <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" role="button" tabindex="0">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </header>
-
-  <main>
-    <div>
-      <h1>Suas Músicas, Seu Mundo</h1>
-      <p>Descubra as minhas músicas favoritas através dos meus albums favoritos no MySpoty.</p>
-      <button onclick="window.location.href='albuns.html'">Ouça Agora</button>
-    </div>
-  </main>
-
-  <form action="/buscar" method="GET" style="display: flex; justify-content: center; margin: 20px 0;">
-  <input 
-    type="text" 
-    name="query" 
-    placeholder="Pesquisar músicas, artistas..." 
-    style="padding: 10px; width: 300px; border-radius: 5px 0 0 5px; border: 1px solid #ccc; font-size: 16px;"
-  />
-  <button 
-    type="submit" 
-    style="padding: 10px 20px; background-color: #b31265; color: white; border: none; border-radius: 0 5px 5px 0; cursor: pointer; font-size: 16px;"
-  >
-    Buscar
-  </button>
-</form>
-
-  <footer>
-    &copy; 2025 MySpoty. Todos os direitos reservados.
-  </footer>
-
-  <script src="script.js"></script>
+  <img src="./images1/Purple Musical Sound Music Logo .png" alt="Splash Image" />
 </body>
 </html>
